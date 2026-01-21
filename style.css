@@ -12,7 +12,7 @@ body.space {
 
 #mainContent {
 	position: relative;
-	width: 400px;
+	width: 450px;
 	height: 500px;
 	display: flex; /* centers the main content pane itself */
 	justify-content: center;
@@ -29,26 +29,12 @@ body.space {
 @keyframes move_mercury {
     0%{
         
-        transform: translateX(0px) scale(10)
+        transform: rotate(0deg) translateX(250px) 
 
     }
-    25% {
-        transform: translateY(510px) 
-    }
-    50% {
-       
-        transform: translate(575px, 510px) 
-
-    }
-    75% {
-        
-        transform: translateX(575px) rotate(360deg) 
-
-    }
-
     100%{
         
-        transform: translateX(0px) 
+        transform: rotate(360deg) translateX(250px) 
 
 
     }
@@ -56,3 +42,31 @@ body.space {
 
 
 /*KEYFRAME END*/
+#mercury {
+    top: 235px;
+	left: 210px;
+    animation: move_mercury 3.7s infinite linear;
+}
+
+/*KEYFRAME START*/
+@keyframes move_venus {
+    0%{
+        
+        transform: rotate(0deg) translateX(320px) 
+
+    }
+    100%{
+        
+        transform: rotate(360deg) translateX(320px) 
+
+
+    }
+}
+
+
+/*KEYFRAME END*/
+#venus {
+    top: 247px;
+	left: 210px;
+    animation: move_venus 4s infinite linear;
+}
