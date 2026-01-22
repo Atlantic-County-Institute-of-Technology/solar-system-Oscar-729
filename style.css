@@ -12,17 +12,23 @@ body.space {
 
 #mainContent {
 	position: relative;
-	width: 450px;
-	height: 500px;
+	width: 550px;
+	height: 550px;
 	display: flex; /* centers the main content pane itself */
 	justify-content: center;
 	align-items: center;
+	scale: 50%;
 }
 
 .planets {
 	position: absolute;
 	top: 10%;
 	left: 10%;
+}
+
+.sun {
+	width:20;
+	height: 20;
 }
 
 /*KEYFRAME START*/
@@ -52,12 +58,12 @@ body.space {
 @keyframes move_venus {
     0%{
         
-        transform: rotate(0deg) translateX(320px) 
+        transform: rotate(0deg) translateX(310px) 
 
     }
     100%{
         
-        transform: rotate(360deg) translateX(320px) 
+        transform: rotate(360deg) translateX(310px) 
 
 
     }
@@ -68,5 +74,116 @@ body.space {
 #venus {
     top: 247px;
 	left: 210px;
-    animation: move_venus 4s infinite linear;
+    animation: move_venus 3.9s infinite linear;
 }
+
+/*KEYFRAME START*/
+@keyframes move_earth {
+    0%{
+        
+        transform: rotate(0deg) translateX(390px) 
+
+    }
+    100%{
+        
+        transform: rotate(360deg) translateX(390px) 
+
+
+    }
+}
+/*KEYFRAME END*/
+#earth {
+	top: 280px;
+	left: 210px;
+	animation: move_earth 4.1s infinite linear;
+
+}
+
+/*KEYFRAME START*/
+@keyframes move_mars {
+    0%{
+        
+        transform: rotate(0deg) translateX(440px) 
+
+    }
+    100%{
+        
+        transform: rotate(360deg) translateX(440px) 
+
+
+    }
+}
+/*KEYFRAME END*/
+
+#mars {
+	top: 290px;
+	left: 230px;
+	animation: move_mars 4.3s infinite linear;
+}
+
+/*KEYFRAME START*/
+@keyframes move_jupiter {
+    0%{
+        
+        transform: rotate(0deg) translateX(485px) 
+
+    }
+    100%{
+        
+        transform: rotate(360deg) translateX(485px) 
+
+
+    }
+}
+/*KEYFRAME END*/
+
+#jupiter {
+	top: 300px;
+	left: 245px;
+	animation: move_jupiter 4.5s infinite linear;
+}
+	
+/*KEYFRAME START*/
+@keyframes move_saturn {
+    0%{
+        
+        transform: rotate(0deg) translateX(550px) 
+
+    }
+    100%{
+        
+        transform: rotate(360deg) translateX(550px) 
+
+
+    }
+}
+/*KEYFRAME END*/
+
+#saturn {
+	top: 310px;
+	left: 250px;
+	animation: move_jupiter 4.7s infinite linear;
+}
+	
+/*KEYFRAME START*/
+@keyframes move_uranus {
+    0%{
+        
+        transform: rotate(0deg) translateX(600px) 
+
+    }
+    100%{
+        
+        transform: rotate(360deg) translateX(600px) 
+
+
+    }
+}
+/*KEYFRAME END*/
+
+#uranus {
+	top: 310px;
+	left: 250px;
+	animation: move_uranus 4.9s infinite linear;
+}
+	
