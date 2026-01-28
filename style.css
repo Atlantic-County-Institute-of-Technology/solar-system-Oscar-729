@@ -147,12 +147,12 @@ body.space {
 @keyframes move_saturn {
     0%{
         
-        transform: rotate(0deg) translateX(550px) 
+        transform: rotate(0deg) translateX(650px) 
 
     }
     100%{
         
-        transform: rotate(360deg) translateX(550px) 
+        transform: rotate(360deg) translateX(650px) 
 
 
     }
@@ -181,9 +181,73 @@ body.space {
 }
 /*KEYFRAME END*/
 
-#uranus {
+#neptune {
 	top: 310px;
 	left: 250px;
 	animation: move_uranus 4.9s infinite linear;
 }
 	
+/*KEYFRAME START*/
+@keyframes move_neptune {
+    0%{
+        
+        transform: rotate(0deg) translateX(700px) 
+
+    }
+    100%{
+        
+        transform: rotate(360deg) translateX(700px) 
+
+
+    }
+}
+/*KEYFRAME END*/
+
+#uranus {
+	top: 310px;
+	left: 250px;
+	animation: move_neptune 5.1s infinite linear;
+}
+
+/*KEYFRAME START*/
+@keyframes move_ufo {
+    0%{
+        
+        transform: translateX(0px) 
+    }
+    25% {
+        transform: translateY(510px) rotate(360deg) 
+    }
+    50% {
+       
+        transform: translate(575px, 510px)
+
+    }
+    75% {
+        
+        transform: translateX(575px) rotate(360deg) 
+
+    }
+
+    100%{
+        
+        transform: translateX(0px) 
+
+    }
+}
+
+
+/*KEYFRAME END*/
+
+
+#ufo {
+    position: relative;
+    top: -200px;
+    left: -200px;
+    width: 200px;
+    height: 200px;
+    
+    background-image: url("assets anim/Sanic.png");
+    background-size: cover;
+    animation: move_ufo .01s infinite linear;
+}
