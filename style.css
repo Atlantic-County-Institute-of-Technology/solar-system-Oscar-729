@@ -242,12 +242,12 @@ body.space {
 
 #ufo {
     position: relative;
-    top: -200px;
-    left: -200px;
+    top: -270px;
+    left: -300px;
     width: 200px;
     height: 200px;
     
     background-image: url("assets anim/Sanic.png");
     background-size: cover;
-    animation: move_ufo .01s infinite linear;
+    animation: move_ufo 1s infinite linear;
 }
